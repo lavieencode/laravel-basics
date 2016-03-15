@@ -1,3 +1,11 @@
+# Laravel Basics Playground
+
+I have no idea what this is going to look like as an app, or if it's really going to look like anything, because this is my first PHP framework. Let's find out together! I'll post my objectives/intentions in reference to my code as I go.
+
+If you have any suggestions on how I can improve my code, please let me know or send over a pull request. :)
+
+-Nicole
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
