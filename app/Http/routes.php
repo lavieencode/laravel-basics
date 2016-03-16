@@ -2,8 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Routes File
-|--------------------------------------------------------------------------
+
 |
 | Here is where you will register all of the routes in an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
@@ -11,9 +10,11 @@
 |
 */
 
-Route::get('/', function () {
-    return 'Hello World';
+Route::get('/{name?}', function ($name = 'user') {
+	$data = [ 'name' => ucfirst($name), 'email' => 'sofrlowi@gmail.com' ];
+    return view('hello')->with( $data );
 });
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
