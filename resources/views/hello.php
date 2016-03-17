@@ -1,48 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>My First Laravel Web App</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MetroPaint | Web-Based Painter</title>
+        <!-- Bootstrap -->
+        <link href="stylesheets/css/main.css" rel="stylesheet">
     </head>
+    
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">
-                    <?php echo "Welcome to my web app, $name!" ?>
-                    <?php echo "($email)" ?>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MetroPaint</a>
                 </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">Paint</a></li>
+                        <li><a href="#contact">Collections</a></li>
+                    </ul>
+                    <!-- <ul class="nav navbar-nav navbar-right dropdown-menu">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </li>
+                    </ul> -->
+                </div><!--/.nav-collapse -->
+            </div> <!-- /container -->
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Color your MetroWorld</h1>
+                <p>With MetroPaint, you can create new paint styles for your avatar and turf from anywhere. Save your codes, and share them with others.</p>
+                <p>Let's get started!</p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Create an account &raquo;</a>
+                </p>
             </div>
-        </div>
+        </div> <!-- /container -->
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     </body>
 </html>

@@ -1,0 +1,20 @@
+// Bootstrap via CodeKit Bower Asset Management
+@import '../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+// Google Fonts via CDN
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200);
+
+// FONTS
+$default-font: 'Work Sans', sans-serif;
+
+// COLORS
+$h1: darkgrey;
+
+// BODY STYLES
+body {
+	font-family: $default-font;
+	color: $h1;
+}
+
+// HEADER STYLES
+h1 {
+}
